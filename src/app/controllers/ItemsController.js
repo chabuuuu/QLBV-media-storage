@@ -1,7 +1,8 @@
+const host = process.env.HOST !== 'localhost:3000'
 class ItemsController {
     //[Get] /items/:slug
     async store(req, res, next) {
-        return res.json({status: "success", url: `localhost:3000/photo/item/${req.imagename}`})
+        return res.json({status: "success", url: `${host}/photo/item/${req.imagename}`})
     }
 
     //[Get] /items/create
