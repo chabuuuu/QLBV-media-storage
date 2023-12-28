@@ -1,4 +1,5 @@
-const host = process.env.HOST || 'localhost:3000'
+//const host = process.env.HOST || 'localhost:3000'
+const host = "3.25.245.200"
 class ItemsController {
     //[Get] /items/:slug
     async store(req, res, next) {
